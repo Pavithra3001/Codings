@@ -1,0 +1,85 @@
+C# vs .Net
+-C# programming languages
+-.Net is a framework for building Applications on Windows we can use languages like vb.net F# and so on 
+
+.NET components
+-CLR (Common Language RunTime)
+-Class Library
+
+
+------------------------------------------------------------------------------------------
+CLR - Common Language RunTime
+
+C/C++ - code when compiled converted to native code for the machine.
+We cannot run it on different architecture
+
+Borrowed from Java Community
+C# code - compiled we get IL Code (Intermediate Language)
+IL Code is independent of machine
+IL code is then translated to native code
+
+(CLR) sitting in memory that translates the IL code into native code
+Just in Time - JIT Compilation
+
+If a machine has CLR it can run our .Net Application, Doesn’t matter if its Linux or Windows
+
+------------------------------------------------------------------------------------------
+Architecture of .Net Applications
+
+	- Consists of classes 
+	- Classes is a container which have Data called attributes  and functions called Methods
+	- Car class - attributes Make, model,colour - methods start()  and move()
+
+------------------------------------------------------------------------------------------
+Namespaces
+More number of classes in an application, we use a namespace.
+So a namespace is a container for related classes.
+For example 
+	- dotnet framework we have name spaces each containing tens of related classes.
+	- We have name spaces for working with data like databases.
+	- We also have name spaces for working with graphics and images.
+	- We have name spaces for working with security now in real world application as these name spaces grow
+
+------------------------------------------------------------------------------------------
+Assembly
+We need a different way of partitioning an application and thats where we use an assembly and assembly is a container for related name spaces.
+Physically its a file on the disk which can either be an executable or a DLL which stands for dynamically linked library.
+So when you compile an application the compiler builds one or more assemblies depending on how you partition
+
+ It's a file, in the form of a executable or a DLL, that contains one ore more namespaces and classes.
+
+An assembly is a file (DLL or EXE) that contains one or more namespaces and classes. An EXE file represents a program that can be executed. A DLL is a file that includes code that can be re-used across different programs.
+
+------------------------------------------------------------------------------------------
+Console Application
+
+A console application is a very simple application that does not have a graphical user interface and it's a great learning tool for learning a new language.
+
+I know this concept of solution in visual studio we have this concept of solution which can have one or more projects with a very simple application.
+You have only one solution and one project but as your application grows you add more projects each responsible for something different.
+
+c# application - Console Application
+
+Properties has assembly info, version details as such
+References - has assemblies(basic) that are required for solution
+App.config - connection string for db, settings for application
+
+Project - HelloWorld
+Program.cs
+
+------------------------------------------------------------------------------------------
+using statements - for referencing the assemblies
+using system is a namespace a Dot Net Framework and that's where we have all these basic utility classes and primitive types 
+using system.collections.generic is used to work with lists collections and 
+using system.Linq is used to work with data.
+using system.text is used to work with text and coding and stuff like that.
+using system.threading is used to build multithreaded applications 
+
+Namespace HelloWorld
+
+Case sensitive language
+{} - block of code
+
+Console is a class
+
+Object Browser - to look into classes and their methods and attributes
